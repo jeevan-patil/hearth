@@ -70,7 +70,7 @@ public class CandyCounter {
 		Scanner scanner = new Scanner(System.in);
 
 		try {
-			int noOfCases = scanner.nextInt(); //Integer.valueOf(br.readLine());
+			int noOfCases = scanner.nextInt();
 			for(int i = 0; i < noOfCases; i++) {
 				cases.add(scanner.nextInt());
 			}
