@@ -1,10 +1,8 @@
 package org.hearth.july14;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 
@@ -55,9 +53,8 @@ import java.util.List;
  *
  */
 public class CandyCounter {
-	private final static int noOfPersons = 2;
-
 	public static void main(String[] args) {
+		final int noOfPersons = 2;
 		CandyCounter counter = new CandyCounter();
 		for(Integer days : counter.acceptCases()) {
 			long candyCount = 0;
@@ -70,20 +67,16 @@ public class CandyCounter {
 
 	private List<Integer> acceptCases() {
 		List<Integer> cases = new ArrayList<Integer>();
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Scanner scanner = new Scanner(System.in);
 
 		try {
-			int noOfCases = Integer.valueOf(br.readLine());
+			int noOfCases = scanner.nextInt(); //Integer.valueOf(br.readLine());
 			for(int i = 0; i < noOfCases; i++) {
-				cases.add(Integer.valueOf(br.readLine()));
+				cases.add(scanner.nextInt());
 			}
 		} catch (NumberFormatException e) {
-		} catch (IOException e) {
 		} finally {
-			try {
-				br.close();
-			} catch (IOException e) {
-			}
+			scanner.close();
 		}
 
 		return cases;
