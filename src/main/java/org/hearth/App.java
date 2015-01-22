@@ -1,7 +1,7 @@
 package org.hearth;
 
 /**
- * Hello world!
+ * @author jeevan
  *
  */
 public class App 
