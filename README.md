@@ -1,1 +1,1 @@
-Hackerearth solutions (www.hackerearth.com)
+Hackerearth solutions (http://www.hackerearth.com/users/jeevan-patil/)
